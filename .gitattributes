@@ -14,3 +14,4 @@
 *.bin filter=lfs diff=lfs merge=lfs -text
 *.dll filter=lfs diff=lfs merge=lfs -text
 linux-6.6/rk3568_patch/kernel.patch filter=lfs diff=lfs merge=lfs -text
+linux-6.6/rk3588_patch/kernel.patch filter=lfs diff=lfs merge=lfs -text
