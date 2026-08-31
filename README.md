@@ -57,6 +57,23 @@ kernel/linux
 	                └── standard_common_defconfig         # Common defconfig of the standard-system kernel
 ```
 
+The HiSpark AiFly development board patches based on Linux 6.6 are provided in **linux-6.6/hispark\_aifly\_patch**. The **patch\_hispark\_aifly.sh** script applies them in sequence:
+
+```
+kernel/linux/patches/linux-6.6/hispark_aifly_patch
+├── 0001-kernel-hispark_aifly.patch        # Basic HiSpark AiFly board adaptation patches
+├── 0002-kernel-compile-support.patch      # Kernel compilation support patches
+├── 0003-kernel-drm.patch                  # DRM patches
+├── 0004-kernel-vo.patch                   # Video output (VO) patches
+├── 0005-kernel-dhcp-support.patch         # DHCP support patches
+├── 0006-kernel-mipi-support.patch         # MIPI support patches
+├── 0007-kernel-nca9555.patch              # NCA9555 GPIO expander patches
+├── 0008-power-key-dts.patch               # Power key device tree patches
+├── 0009-hdf-soc-path.patch                # HDF SoC driver path patch for MIPI compilation
+├── 0010-kernel-quectel-4g.patch           # Quectel EC20 4G module driver patches
+└── patch_hispark_aifly.sh                 # Script that applies the patches above
+```
+
 ## Usage<a name="section1393789267"></a>
 
 1. Apply HDF patches.
