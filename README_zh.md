@@ -57,6 +57,23 @@ kernel/linux
 	                └── standard_common_defconfig         # 标准系统的内核的common defconfig
 ```
 
+基于Linux 6.6的HiSpark AiFly开发板补丁位于**linux-6.6/hispark\_aifly\_patch**，由**patch\_hispark\_aifly.sh**按顺序合入：
+
+```
+kernel/linux/patches/linux-6.6/hispark_aifly_patch
+├── 0001-kernel-hispark_aifly.patch        # HiSpark AiFly开发板基础适配补丁
+├── 0002-kernel-compile-support.patch      # 内核编译支持补丁
+├── 0003-kernel-drm.patch                  # DRM补丁
+├── 0004-kernel-vo.patch                   # 视频输出（VO）补丁
+├── 0005-kernel-dhcp-support.patch         # DHCP支持补丁
+├── 0006-kernel-mipi-support.patch         # MIPI支持补丁
+├── 0007-kernel-nca9555.patch              # NCA9555 GPIO扩展芯片补丁
+├── 0008-power-key-dts.patch               # 电源键设备树补丁
+├── 0009-hdf-soc-path.patch                # HDF SoC驱动路径补丁（用于MIPI编译）
+├── 0010-kernel-quectel-4g.patch           # 移远EC20 4G模组驱动补丁
+└── patch_hispark_aifly.sh                 # 按顺序合入上述补丁的脚本
+```
+
 ## 使用说明<a name="section1393789267"></a>
 
 1. 合入HDF补丁
