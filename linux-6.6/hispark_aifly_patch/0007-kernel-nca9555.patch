@@ -40,7 +40,7 @@ new file mode 100644
 index 000000000..e3dc5ccf2
 --- /dev/null
 +++ b/drivers/gpio/gpio-nca9555.c
-@@ -0,0 +1,211 @@
+@@ -0,0 +1,222 @@
 +// SPDX-License-Identifier: GPL-2.0-or-later
 +/*
 + * GPIO driver for NCA9555 MFD
