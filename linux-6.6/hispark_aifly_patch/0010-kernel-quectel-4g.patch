@@ -271,7 +271,7 @@ index 45052a687..1fb166b69 100644
  
  static unsigned int basedrv_clk_readl(const void __iomem *addr)
  {
-@@ -88,6 +105,122 @@ typedef enum mode {
+@@ -88,6 +105,131 @@ typedef enum mode {
  	UNKOWN_MODE
  } combphy_mode;
  
